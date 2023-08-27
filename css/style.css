@@ -1,0 +1,560 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Rubik', sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+h4 {
+    color: #00ed82;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+.check {
+    color: #00ed82;
+}
+
+.text-bold {
+    font-weight: bold;
+}
+
+.text-gray {
+    color: #777;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.text-sm {
+    color: #ccc;
+    font-family: 200;
+    font-size: 0.7rem;
+}
+
+.text-md {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.text-md-bold {
+    font-weight: bold;
+}
+
+.text-lg {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.text-xl {
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.text-legal-sm {
+    text-decoration: underline;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.text-legal-lg {
+    text-decoration: underline;
+    margin-top: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    border: none;
+    color: #333;
+    border-radius: 5px;
+    transition: all 0.3s ease-in;
+}
+
+.btn-login {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 0.95rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 8px;
+    color: #ccc;
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease-in;
+}
+
+.btn-login:hover {
+    background: #3a3a3a;
+    color: #fff;
+}
+
+.btn-link-secondary {
+    color: steelblue;
+}
+
+.btn-primary {
+    background: #00ed82;
+    color: #0f0f0f;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0.7rem 1rem;
+}
+
+.btn-primary:hover,
+.btn-price:hover {
+    opacity: 0.75;
+}
+
+.btn-price {
+    background: #fff;
+    color: #0f0f0f;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0.7rem 1rem;
+}
+
+/* header */
+.header {
+    background: url('../images/showcase.jpg') no-repeat center center/cover;
+    height: 660px;
+    position: relative;
+}
+
+.header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    z-index: 1;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.76) 15.54%, rgba(0, 0, 0, 0.192) 60.23%, rgba(0, 0, 0, 8e-5) 100%);
+}
+
+.header .navigation {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.7rem 2.8rem;
+}
+
+.header .navigation .logo {
+    width: 60px;
+    height: 20px;
+    z-index: 2;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin: 5rem auto;
+    text-align: center;
+}
+
+.header-content .ads {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.header-content .ads h4 {
+    font-size: 12px;
+}
+
+
+.header-content .ads img {
+    width: 200px;
+    margin: 1.5rem 0;
+}
+
+.header .text-lg {
+    margin-bottom: 1.5rem;
+}
+
+.header .btn-primary {
+    width: 100%;
+}
+
+/* Plans */
+.plans {
+    margin: 0 2.8rem;
+}
+
+.plans .text-sm {
+    text-align: end;
+    margin: 1rem 0;
+}
+
+.plans .plans-content {
+    text-align: center;
+    margin: 5rem 0 3.5rem;
+}
+
+.plans .categories {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans .plans-content .text-xl {
+    margin: 1rem 0 1.5rem;
+}
+
+.plans .plan-covers {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.plans .cover {
+    position: relative;
+    width: 300px;
+    height: 500px;
+    padding: 1rem;
+    border: 2px solid #0f0f0f;
+}
+
+.plans .cover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 15.54%, rgba(0, 0, 0, 0.1) 60.23%, rgba(0, 0, 0, 8e-5) 100%);
+}
+
+.plans .cover:hover {
+    border: 2px solid #6e6e6e;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.plans .cover-1 {
+    background: url('../images/cover-2.jpg') no-repeat center center/cover;
+}
+
+.plans .cover-2 {
+    background: url('../images/cover2.jpg') no-repeat center center/cover;
+}
+
+.plans .cover-3 {
+    background: url('../images/cover3.png') no-repeat center center/cover;
+}
+
+.plans .cover-4 {
+    background: url('../images/cover4.png') no-repeat center center/cover;
+}
+
+/* live */
+.live,
+.select-plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 5rem 0 3.5rem;
+}
+
+.live .live-content .text-xl,
+.select-plans .select-plans-content .text-lg {
+    margin: 1rem 0 1.5rem;
+}
+
+.live .live-content .text-md,
+.select-plans .select-plans-content .text-md {
+    margin: 0.5rem 10rem;
+}
+
+.live .live-content .text-legal-lg {
+    margin-bottom: 3rem;
+}
+
+/* sports */
+.sports {
+    background: url('../images/live-sports.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.sports .sports-content {
+    position: relative;
+    top: 120px;
+    left: 120px;
+    max-width: 700px;
+}
+
+.sports .icons {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.sports .icons>div {
+    background: url('../images/network-logo-bg.png') no-repeat center center/cover;
+    height: 60px;
+    width: 60px;
+    padding: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* select plans */
+.select-plans {
+    flex-direction: column;
+    margin: 5rem;
+}
+
+.select-plans .ads {
+    display: flex;
+    justify-content: end;
+    gap: 50px;
+    padding: 1rem 0;
+    margin-top: 1rem;
+    width: 850px;
+}
+
+.select-plans .btn-price {
+    margin: 1rem 0 2rem;
+}
+
+.select-plans .plan-info .info {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    border-top: 1px solid #777;
+    padding: 1rem 0;
+}
+
+.select-plans .plan-info .info:last-of-type {
+    border-bottom: 1px solid #777;
+}
+
+.select-plans .text-info {
+    text-align: start;
+}
+
+/* footer */
+.footer {
+    background: #f4f4f4;
+    padding: 5rem;
+    text-align: center;
+}
+
+.footer .footer-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    text-align: start;
+    gap: 10px;
+}
+
+.footer a {
+    color: #6e6e6e;
+    line-height: 1.5;
+    font-size: 0.9rem;
+}
+
+.footer .socials img {
+    width: 20px;
+    height: 20px;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+.footer .socials {
+    display: flex;
+    margin: 1rem 0;
+}
+
+/* modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.76) 15.54%, rgba(0, 0, 0, 0.192) 60.23%, rgba(0, 0, 0, 8e-5) 100%);
+}
+
+.modal .modal-container {
+    width: 600px;
+    background: #fff;
+    color: #333;
+    margin: 5rem auto;
+    padding: 2.5rem;
+    position: relative;
+}
+
+.modal .modal-body {
+    padding-top: 0.5rem;
+}
+
+.modal h2 {
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+
+.modal .modal-body p {
+    font-size: 0.9rem;
+    color: #777;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-bottom: 1.5rem;
+}
+
+.modal .form-input {
+    display: block;
+}
+
+.modal .form-control {
+    margin-bottom: 1.5rem;
+}
+
+.modal label {
+    color: #6e6e6e;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.modal input {
+    width: 100%;
+    padding: 0.9rem 0;
+    border-radius: 5px;
+    border: 1px solid #333;
+    margin: 0.3rem 0;
+}
+
+.modal .form-input .btn-link-secondary {
+    font-size: 0.9rem;
+}
+
+.modal .btn-form {
+    width: 100%;
+    background: #6e6e6e;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    border-radius: 5px;
+}
+
+.modal .modal-footer {
+    margin-top: 2.5rem;
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.close {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@media(max-width:768px) {
+
+    .header-content {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    .header-content .ads {
+        display: block;
+        width: 500px;
+        padding: 0 5rem;
+    }
+
+    .header .text-legal-sm {
+        display: none;
+    }
+
+    .header .text-legal-lg {
+        display: none;
+    }
+
+    .plans .plan-covers {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .live,
+    .select-plans {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 5rem 0 3.5rem;
+    }
+
+    .live .live-content .text-xl,
+    .select-plans .select-plans-content .text-lg {
+        margin: 1rem 0 1.5rem;
+    }
+
+    .live .live-content .text-md,
+    .select-plans .select-plans-content .text-md {
+        margin: 0.5rem 0.5rem;
+    }
+
+    .live .live-content .text-legal-lg {
+        margin-bottom: 3rem;
+    }
+
+    .live .text-sm {
+        margin: 0 3rem;
+    }
+
+    .sports .sports-content {
+        position: relative;
+        top: 120px;
+        left: 10px;
+        max-width: 300px;
+    }
+
+    /* select plans */
+    .select-plans {
+        display: none;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
